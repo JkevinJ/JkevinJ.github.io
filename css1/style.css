@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #101010;
+  color: #fff;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.contain-header {
+  background-color: #1E1630;
+  padding: 5px 0 0 0;
+}
+
+.title-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.nav-menu {
+  margin-right: 80px;
+  font-family: "Inter", "Italiana", sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  position: relative;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.title-site {
+  font-family: 'Italiana', sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-left: 52px;
+}
+
+.section-first {
+  height: 88vh;
+  display: flex;
+  overflow: hidden; 
+}
+
+section {
+  display: flex;
+  overflow-y: auto; 
+}
+
+.section-left,
+.section-right {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.section-left {
+  align-items: flex-start; /* Alignement à gauche */
+  text-align: left; /* Alignement du texte à gauche */
+  padding: 0 0 0 35px;
+}
+.section-right img {
+  max-width: 60%;
+  height: auto;
+}
+.text-acceuil{
+  font-family: 'Italiana', sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+.animated{
+  display: flex;
+  align-items: center;
+ 
+}
+.animated p {
+  margin-right: 5px;
+}
