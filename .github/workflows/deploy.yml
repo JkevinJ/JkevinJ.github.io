@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Page
 
 on:
   # Déclenchez le workflow chaque fois que vous poussez vers la branche `main`
