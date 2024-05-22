@@ -1,0 +1,79 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/BilanPhase1.astro';
+import PortfolioPreview from '../components/PortfolioPreview.astro';
+import Hero from '../components/Hero.astro';
+import Grid from '../components/Grid.astro';
+
+const projects = (await getCollection('work'))
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .slice(5); // Commence à l'index 5 (le sixième élément)
+
+---
+
+<BaseLayout
+	title = 'Projet - Développeur',
+	description = 'Portfolio',
+>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+			<Hero
+				title="Veille Technologique 1"
+				tagline="L'intégration de l'Intelligence artificielle dans la cybersecuriter:"
+				align="start"
+			/>
+			<h4>Outils utilisés :</h4>
+			<p>- Google Alerts <br> - Recherche personnelle</p>
+			<h5>L'impact de l'IA pour la cybersécurité</h5>
+			<p>Que ce soit du bon côté ou du mauvais côté, l'utilisation de l'IA pour la cybersécurité <br> est plus présente aujourd'hui.</p>
+
+			<Grid variant="offset">
+				{
+					projects.map((project) => (
+						<li>
+							<PortfolioPreview project={project} />
+						</li>
+					))
+				}
+			</Grid>
+		</main>
+		<!-- <ContactCTA /> -->
+		<br>
+		<br>
+	</div>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+			<Hero
+				title="Veille Technologique 1"
+				tagline="L'intégration de l'Intelligence artificielle dans la cybersecuriter:"
+				align="start"
+			/>
+			<h4>Outils utilisés :</h4>
+			<p>- Google Alerts <br> - Recherche personnelle</p>
+			<h5>L'impact de l'IA pour la cybersécurité</h5>
+			<p>Que ce soit du bon côté ou du mauvais côté, l'utilisation de l'IA pour la cybersécurité <br> est plus présente aujourd'hui.</p>
+
+			<Grid variant="offset">
+				{
+					projects.map((project) => (
+						<li>
+							<PortfolioPreview project={project} />
+						</li>
+					))
+				}
+			</Grid>
+		</main>
+		<!-- <ContactCTA /> -->
+		<br>
+		<br>
+	</div>
+
+	<br>
+	<br>
+	
+	
+</BaseLayout>
+

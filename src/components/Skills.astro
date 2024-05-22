@@ -1,0 +1,92 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	
+	<div class="stack gap-2 lg:gap-4">
+		<img src="../../assets/graduated.png" alt="" width="40px">
+		<h2 class="titre-section">Qu'est-ce que le BTS SIO ?</h2>
+        <p class="texte">Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations (BTS SIO) est une formation en deux ans qui prépare aux métiers de l'informatique. Il s'adresse aux personnes qui souhaitent acquérir des compétences techniques et professionnelles dans le domaine de l'administration réseau, du développement logiciel ou de la gestion de projet informatique.</p>
+        <p class="texte">Le BTS SIO propose deux options :</p>
+        <ul class="liste">
+            <li class="liste-item">
+                Solution d'infrastructure, systèmes et réseaux (SISR) : Cette option forme des professionnels des réseaux et équipements informatiques (installation, maintenance, sécurité).
+            </li>
+            <li class="liste-item">
+                Solutions logicielles et applications métiers (SLAM) : Cette option forme des spécialistes des logiciels (développement, intégration, maintenance).
+            </li>
+        </ul>
+        <br>
+        <h2 class="titre-section">Débouchés</h2>
+        <p class="texte">A la sortie d'un BTS SIO, les diplômés peuvent prétendre à une large palette de métiers dans le domaine de l'informatique. Voici quelques exemples :</p>
+		<br>
+		<div class="contain-option-bts">
+			<div>
+				<h3>Option SISR</h3>
+					<ul class="liste">
+						<li class="liste-item">Administrateur systèmes et réseaux</li>
+						<li class="liste-item">Informaticien support et déploiement</li>
+						<li class="liste-item">Technicien d'infrastructure</li>
+						<li class="liste-item">Technicien de production</li>
+					</ul>
+			</div>
+			<div>
+			<h3>Option SLAM &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <h5> &nbsp;&nbsp;&nbsp;(la fillière que j'ai choisis)</h5> </h3>
+				<ul class="liste">
+					<li class="liste-item">Développeur d'applications informatiques</li>
+					<li class="liste-item">Développeur informatique</li>
+					<li class="liste-item">Analyste d'applications ou d'études</li>
+					<li class="liste-item">Analyste programmeur</li>
+					<li class="liste-item">Programmeur analyste</li>
+					<li class="liste-item">Programmeur d'applications</li>
+					<li class="liste-item">Responsable des services applicatifs</li>
+					<li class="liste-item">Technicien d'études informatiques</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		
+	}
+
+	.contain-option-bts {
+    	display: flex;
+		width: 95%;
+    	justify-content: space-around;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
